@@ -1,8 +1,10 @@
 # INPUT:  Only the node to be deleted
 # OUTPUT: None (inplace)
-# IDEA:   Run a pointer from given node to tail node. Copy values from preceeding node to current node.
+# IDEA:   1. Run a pointer from given node to tail node. Copy values from preceeding node to current node.
 #         Finally, update the second last node as tail node (next=None) - Keep a variable to point the
-#         previous node.
+#         previous node. (Used here)
+#         2. Replace the value of the node we want to delete with the value in the node after it,
+#         and then delete the node after it. (Optimized)
 
 # Definition for singly-linked list.
 # class ListNode:
